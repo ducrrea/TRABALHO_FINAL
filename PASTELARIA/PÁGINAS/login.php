@@ -155,7 +155,7 @@
 <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-unit">Bem-vindo</h2>
 <p class="font-body-md text-on-surface-variant max-w-[280px] mx-auto">Sinta a excelência artesanal em cada detalhe de nossa cozinha.</p>
 </div>
-<form class="w-full space-y-stack-md" action="validar_login.php" method="POST">
+<form class="w-full space-y-stack-md" action="validar_login.php" method="POST"> 
 <div class="space-y-unit">
 <label class="font-label-sm text-label-sm text-on-surface-variant block ml-1" for="username">Nome</label>
 <div class="relative group">
