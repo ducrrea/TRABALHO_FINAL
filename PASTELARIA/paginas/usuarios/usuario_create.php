@@ -2,13 +2,10 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>L'Art du Pastel - Cadastrar Usuário</title>
-<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Google Fonts: Playfair Display & DM Sans -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<!-- Material Symbols Outlined -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -139,7 +136,6 @@
     </style>
 </head>
 <body class="font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Top Navigation Bar -->
 <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-sm bg-transparent">
 <a class="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity active:scale-95 duration-200" href="usuario_read.php">
 <span class="material-symbols-outlined text-display-lg-mobile md:text-display-lg">arrow_back</span>
@@ -147,31 +143,24 @@
 <div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
             L'Art du Pastel
         </div>
-<div class="w-10"></div> <!-- Spacer for symmetry -->
-</header>
+<div class="w-10"></div> </header>
 <main class="min-h-screen relative flex flex-col md:flex-row overflow-hidden h-screen">
-<!-- Left Side: Interactive Image Canvas (Desktop Only / Top on Mobile) -->
 <section class="relative w-full md:w-3/5 h-[40vh] md:h-screen hero-mask overflow-hidden order-1 md:order-2 h-screen">
-<img alt="Gourmet Pastel" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-[10000ms] hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuvdbWVHfLVmpQ11T1EUuNKIIc-FaspOcyDPv5Wf95DqKz_P1w8tL6k-mYH-3LHx1iiJ5ZFAFAXaO3kjGU1HG3LScnW14rShlKlOJonlLRgWdsr7J_GcqsDwH4YrOij78Aln7IwI_T4nhFx6lXWsYvssaKhPDQFvspu71i2ImGTBoZcxKO_8kRgt-1N3uRXvy0Rzwr_Zz-gu-NhVKfELjIUz-BhKsjM8nS6rHD4ZsLBTEK67AsjCvOYHA4" style="transform: scale(1.1) translate(3.2px, 2.89px);">
-<!-- Atmospheric Gradient Overlay -->
+<img alt="Gourmet Pastel" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-[10000ms] hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnTRQ5ali4jACIjt7YzxiNZnHVSQ5uoCI2RltrwlagYfHPlwYxceAIZD8hIKt3SykHzcnr_92qCHianXCMm55q9cFw_WMmP7P9oRJf8JVEbrmzU-S-m3kru8IvmsEcP0p4j3zS5_URhgEkg1wEHM62MxMmPjk2BLMXqWOrssv6-U_1Pw-B-w-CkuW7VsEfm_8Y5phrngfbDSM9Dc0Palbm7VksUM5QHpJS4Tkev5Bo-jbdgN7Taln-Dl1bTwn-EgcNB9GQqAFuHEE" style="transform: scale(1.1) translate(3.34px, 4.95px);"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
 <div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent md:block hidden"></div>
-<!-- Visual Flourish: Soft Light Bloom -->
 <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
 </section>
-<!-- Right Side: The Registration Canvas -->
 <section class="w-full md:w-2/5 flex items-center justify-center p-margin-mobile md:p-margin-desktop z-10 order-2 md:order-1 relative">
 <div class="w-full max-w-md glass-panel p-stack-lg rounded-[2.5rem] relative overflow-hidden transition-all duration-500 hover:shadow-2xl">
-<!-- Background Glow -->
 <div class="absolute -top-20 -right-20 w-40 h-40 bg-primary-fixed-dim/30 blur-[60px] rounded-full"></div>
 <header class="mb-stack-lg text-center md:text-left">
 <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-2">Cadastrar Usuário</h1>
 <p class="font-body-md text-on-surface-variant opacity-80">Junte-se à nossa experiência gastronômica artesanal.</p>
 </header>
 <form action="validar_create_usuario.php" class="space-y-stack-md" method="POST">
-<!-- Field: Nome -->
 <div class="relative floating-label-input group">
-<input class="w-full bg-surface-container-highest/40 border-none rounded-xl px-4 py-4 pt-6 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none font-body-md" id="nome" name="Nome" placeholder=" " required="" type="text">
+<input class="w-full bg-surface-container-highest/40 border-none rounded-xl px-4 py-4 pt-6 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none font-body-md" id="nome" name="nome" placeholder=" " required="" type="text">
 <label class="absolute left-4 top-4 text-on-surface-variant transition-all duration-200 pointer-events-none font-label-sm uppercase tracking-widest text-[10px]" for="nome">
                             Nome Completo
                         </label>
@@ -179,9 +168,8 @@
 <span class="material-symbols-outlined text-primary text-body-md">person</span>
 </div>
 </div>
-<!-- Field: Senha -->
 <div class="relative floating-label-input group">
-<input class="w-full bg-surface-container-highest/40 border-none rounded-xl px-4 py-4 pt-6 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none font-body-md" id="senha" name="Senha" placeholder=" " required="" type="password">
+<input class="w-full bg-surface-container-highest/40 border-none rounded-xl px-4 py-4 pt-6 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all outline-none font-body-md" id="senha" name="senha" placeholder=" " required="" type="password">
 <label class="absolute left-4 top-4 text-on-surface-variant transition-all duration-200 pointer-events-none font-label-sm uppercase tracking-widest text-[10px]" for="senha">
                             Senha de Acesso
                         </label>
@@ -195,11 +183,10 @@
 <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">chevron_right</span>
 </button>
 <p class="text-center font-label-sm text-outline">
-                            Já possui uma conta? <a class="text-primary font-bold hover:underline" href="#">Entrar</a>
+                            Já possui uma account? <a class="text-primary font-bold hover:underline" href="#">Entrar</a>
 </p>
 </div>
 </form>
-<!-- Decorative elements inside card -->
 <div class="mt-stack-lg pt-stack-md border-t border-outline-variant/30 flex justify-between items-center opacity-60">
 <div class="flex gap-2">
 <div class="w-2 h-2 rounded-full bg-primary/40"></div>
@@ -210,7 +197,6 @@
 </div>
 </section>
 </main>
-<!-- Footer from JSON -->
 <footer class="w-full py-stack-md flex flex-col md:flex-row justify-center items-center gap-gutter bg-transparent"></footer>
 <script>
         function togglePassword() {

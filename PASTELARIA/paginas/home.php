@@ -164,7 +164,7 @@
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
 <!-- Usuários (Large Vertical Focus) -->
 <div class="md:col-span-4 h-full">
-<form action="validar_usuario.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 h-full flex flex-col group" method="POST">
+<form action="./usuarios/usuario_read.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 h-full flex flex-col group" method="POST">
 <div class="mb-stack-lg">
 <div class="flex justify-between items-start mb-6">
 <span class="material-symbols-outlined text-primary text-4xl" data-icon="account_circle">account_circle</span>
@@ -182,7 +182,7 @@
 </div>
 <!-- Clientes (Landscape Focus) -->
 <div class="md:col-span-8">
-<form action="validar_cliente.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group relative overflow-hidden" method="POST">
+<form action="./clientes/cliente_read.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group relative overflow-hidden" method="GET">
 <div class="relative z-10">
 <div class="flex justify-between items-start mb-10">
 <span class="material-symbols-outlined text-primary text-4xl" data-icon="loyalty">loyalty</span>
@@ -194,7 +194,7 @@
 <p class="font-body-md text-on-surface-variant">Visualize o histórico, preferências e fidelidade dos apreciadores da marca.</p>
 </div>
 <button class="font-button text-button bg-primary text-on-primary px-8 py-4 rounded-full shadow-lg hover:shadow-primary/20 transition-all active:scale-95" type="submit">
-                                Ver Carteira
+                                Ver Clientes
                             </button>
 </div>
 </div>
@@ -206,7 +206,7 @@
 <!-- Nested Grid for Pedidos & Produtos -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-gutter">
 <!-- Produtos -->
-<form action="validar_produtos.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group" method="POST">
+<form action="./produtos/validar_produtos.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group" method="POST">
 <div class="mb-10">
 <div class="flex justify-between items-start mb-6">
 <span class="material-symbols-outlined text-primary text-4xl" data-icon="restaurant_menu">restaurant_menu</span>
@@ -220,7 +220,7 @@
                         </button>
 </form>
 <!-- Pedidos -->
-<form action="validar_pedidos.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group border-l-4 border-l-primary-container" method="POST">
+<form action="./pedidos/validar_pedidos.php" class="glass-panel p-stack-md rounded-xl card-hover transition-all duration-500 group border-l-4 border-l-primary-container" method="POST">
 <div class="mb-10">
 <div class="flex justify-between items-start mb-6">
 <span class="material-symbols-outlined text-primary text-4xl" data-icon="receipt_long">receipt_long</span>
