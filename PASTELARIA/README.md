@@ -80,8 +80,11 @@ Entidade central que unifica os clientes, os produtos vendidos, as quantidades e
 | idstatus | INTEGER | FK | DEFAULT 1 | Vínculo com o status atual do pedido. |
 
 ---
+## 5. Nome e senha de acesso
+nome: Maria Clara    
+senha: 123456
 
-## 5. Script de Instalação do Banco de Dados (SQL)
+## 6. Script de Instalação do Banco de Dados (SQL)
 
 ```sql
 CREATE TABLE usuarios (
