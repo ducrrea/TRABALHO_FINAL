@@ -102,6 +102,7 @@
         body {
             background-color: #FFFDF5; /* Clotted Cream */
             overflow-x: hidden;
+            width: 400vw;
         }
 
         .glass-panel {
@@ -182,9 +183,6 @@
 <span class="">Finalizar Cadastro</span>
 <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">chevron_right</span>
 </button>
-<p class="text-center font-label-sm text-outline">
-                            Já possui uma account? <a class="text-primary font-bold hover:underline" href="#">Entrar</a>
-</p>
 </div>
 </form>
 <div class="mt-stack-lg pt-stack-md border-t border-outline-variant/30 flex justify-between items-center opacity-60">

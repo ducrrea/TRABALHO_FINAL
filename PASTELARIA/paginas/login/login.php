@@ -172,21 +172,13 @@
 </div>
 <div class="flex justify-between items-center px-1">
 <label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary transition-all" type="checkbox">
-<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">Lembrar de mim</span>
 </label>
-<a class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors" href="#">Esqueci minha senha</a>
 </div>
 <button class="w-full bg-primary hover:bg-primary-container text-white py-4 rounded-full font-button text-button shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-stack-md group" type="submit">
                     Entrar
                     <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
 </form>
-<div class="mt-stack-lg text-center pt-stack-md border-t border-outline-variant/20 w-full">
-<p class="font-body-md text-on-surface-variant">Não possui uma conta? 
-                    <a class="text-primary font-bold hover:underline underline-offset-4 decoration-2 transition-all ml-1" href="#">Criar conta</a>
-</p>
-</div>
 </div>
 <!-- Atmospheric Hint -->
 <div class="mt-stack-md text-center">
